@@ -5,11 +5,11 @@ print("Socket successfully created")
 
 # reserve a port on your computer, it can be anything
 port = 12345
-
+host = "127.0.0.1"
 # Next bind to the port, we have not typed any ip in the ip field, instead we have inputted an empty string
 # This makes the server listen to requests coming from other computers on the network
 
-s.bind(("", port))
+s.bind(("localhost", port))
 print("Socket binded to %s" %(port))
 
 #Put the socket into listening mode

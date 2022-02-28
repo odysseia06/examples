@@ -45,7 +45,9 @@ label1 = tk.Label(root, text=prompt, width=len(prompt), bg="yellow")
 label1.pack()
 #Create menu buttons from app_list 
 for index, app in enumerate(app_list):
-    appButtons(root, index)      
+    appButtons(root, index)
+    print("index:" , index)
+    print("app:", app)      
 #Run the tk window
 root.mainloop()
 #End        
